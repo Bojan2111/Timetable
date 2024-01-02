@@ -11,5 +11,9 @@ namespace Timetable.Domain.Models
         public string? Id { get; set; }
 
         public string? Name { get; set; }
+        public string? ShiftPattern { get; set; }
+        public int CurrentMonth { get; set; }
+        public DateTime? CurrentStartDate { get; set; }
+        public DateTime? NextMonthStartDate { get; set; }
     }
 }

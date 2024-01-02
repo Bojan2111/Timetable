@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace Timetable.Domain.Models
 {
-    public class Shift
+    public class Absence
     {
-        public string? Id { get; set; }
-
+        public int Id { get; set; }
+        public int EmployeeId { get; set; }
         public string? Type { get; set; }
-
+        public int Year { get; set; }
         public int Month { get; set; }
-
-        public DateTime Date { get; set; }
-
-        public string? MemberId { get; set; }
+        public int StartDay { get; set; }
+        public int EndDay { get; set; }
     }
 }
